@@ -88,16 +88,17 @@ This service allows users to like or unlike messages. The same endpoint is used 
 
 ## Prerequisites
 
-- **Node.js** (or any backend environment compatible with your services).
+- **Node.js**
 - **Multiple terminals** to run the services separately.
+- **Go**
 
 ## Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone git@github.com:kkkaterinaaa/Softarch-A5-Team12.git
-cd Softarch-A5-Team12
+git clone git@github.com:kkkaterinaaa/SoftArch-A5-Team12.git
+cd SoftArch-A5-Team12
 ```
 
 ### 2. Install Dependencies and Run Each Service
@@ -107,26 +108,31 @@ Each service should be run in its own terminal:
 #### User Service
 
 ```bash
-cd user-service
-npm install
-npm start
+cd backend/user-service
+go run main.go
 ```
 
 #### Message Service
 
 ```bash
-cd message-service
-npm install
-npm start
+cd backend/message-service
+go run main.go
 ```
 
 #### Like Service
 
 ```bash
-cd interction-service
-npm install
-npm start
+cd backend/interction-service
+go run main.go
 ```
+
+#### Proxy
+
+```bash
+cd backend/proxy
+go run proxy.go
+```
+
 
 #### Frontend Service (Optional)
 
@@ -134,7 +140,7 @@ To run the frontend:
 
 ```bash
 cd frontend
-npm install
+npm i
 npm start
 ```
 
