@@ -1,0 +1,68 @@
+/* Container for the scrollable messages box */
+.message-box {
+    width: 100%;
+    max-width: 100%;
+    height: 455px; /* Set a fixed height for the scrollable box */
+    margin: 0 auto; /* Center the box */
+    border: none;
+    overflow: hidden; /* Hide any overflowing content */
+    margin-top: 15px;
+  }
+  
+  /* Scrollable message list */
+  .message-list {
+    height: 100%; /* Take up the full height of the container */
+    overflow-y: auto; /* Make the messages list scrollable */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Message container styling */
+  .message-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+    max-width: 96%;
+    width: 100%;
+  }
+  
+  .message-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Like button styling */
+  .like-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .like-button:hover {
+    background: none;
+  }
+  
+  .heart {
+    font-size: 20px;
+    color: gray;
+    transition: color 0.3s ease;
+  }
+  
+  .heart-button:hover .heart {
+    color: gray;
+  }
+  
+  .message-container p {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; /* Preserve newlines and whitespace */
+    padding-right: 10px;
+  }
+  

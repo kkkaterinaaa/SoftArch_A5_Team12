@@ -1,0 +1,55 @@
+/* Container for the form */
+.message-form {
+    position: fixed;
+    bottom: 0; /* Fix the form at the bottom of the viewport */
+  left: 0;
+  right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;  /* Set a max-width for the form */
+    margin: 20px auto; /* Center the form */
+  }
+  
+  /* Textarea input */
+  .message-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 10px;
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Set a default height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .message-input:focus {
+    border-color: red; /* Highlight the border on focus */
+  }
+  
+  /* Submit button */
+  .submit-button {
+    background-color: gray; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: red; /* Darker blue on hover */
+  }
+  
+  .submit-button:focus {
+    outline: none;
+  }
+  

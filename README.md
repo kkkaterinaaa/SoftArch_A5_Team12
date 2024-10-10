@@ -108,28 +108,28 @@ Each service should be run in its own terminal:
 #### User Service
 
 ```bash
-cd backend/user-service
+cd twitter/user-service
 go run main.go
 ```
 
 #### Message Service
 
 ```bash
-cd backend/message-service
+cd twitter/message-service
 go run main.go
 ```
 
 #### Like Service
 
 ```bash
-cd backend/interction-service
+cd twitter/interction-service
 go run main.go
 ```
 
 #### Proxy
 
 ```bash
-cd backend/proxy
+cd twitter/proxy
 go run proxy.go
 ```
 
